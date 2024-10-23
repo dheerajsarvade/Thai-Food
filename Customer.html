@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Care</title>
+
+</head>
+<style>
+    body {
+        font-family: garamond;
+        margin: 0;
+        padding: 0;
+        background-image: url(food10.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    
+    header {
+        background-color:;
+        color: rgb(255, 217, 0);
+        padding: 1rem 0;
+        text-align: center;
+    }
+    
+    .customer-care {
+        padding: 2rem;
+        
+        margin: 2rem auto;
+        max-width: 600px;
+        box-shadow: 0px 0px 10px black;
+        border-radius: 50px;
+        background-image: url(OIP.avif);
+    }
+    
+    .customer-care h1 {
+        margin-top: 0;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    label {
+        margin: 0.5rem 0 0.2rem;
+
+    }
+    
+    input, textarea {
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid #6a1e1e;
+        border-radius: 4px;
+        border-radius: 30px;
+    }
+    
+    button {
+        padding: 0.7rem;
+        background-color: #3c7bba;
+        color: whitesmoke;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        border-radius: 30px;
+    }
+    
+    button:hover {
+        background-color: #0a98ea;
+    }
+    
+    footer {
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    form{
+        color:whitesmoke;
+    }
+    
+</style>
+<body>
+    <header>
+        <h1>Customer Care</h1>
+    </header>
+    <section class="customer-care">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2024 Customer Care. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Order</title>
+    <style>
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url(j.webp);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        .container {
+            background-color:whitesmoke;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(104, 100, 100, 0.1);
+            border-radius: 10px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            color: rgb(92, 8, 8);
+        }
+        h1 {
+            color:rgba(136, 4, 4, 0.558);
+            margin-bottom: 20px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .menu-item label {
+            font-weight: bold;
+            color: #495057;
+        }
+        .menu-item input {
+            width: 60px;
+            padding: 5px;
+            border: 1px solid #5a8cbe;
+            border-radius: 5px;
+            text-align: center;
+            color:white;
+        }
+        .payment-methods {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .payment-methods label {
+            font-weight: bold;
+            color: #495057;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .payment-methods input {
+            margin-right: 10px;
+        }
+        .order-button {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #268bf8;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .order-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Order Your Favorite Dish</h1>
+        <form action="#">
+            <div class="menu-item">
+                <label for="item1">Thai Chicken</label>
+                <input type="number" id="item1" name="item1" min="0" placeholder="Qty">
+            </div>
+            <div class="menu-item">
+                <label for="item2">Roasted Chicken</label>
+                <input type="number" id="item2" name="item2" min="0" placeholder="Qty">
+            </div>
+            <div class="menu-item">
+                <label for="item3">Chowmein</label>
+                <input type="number" id="item3" name="item3" min="0" placeholder="Qty">
+            </div>
+            <div class="menu-item">
+                <label for="item4">Chicken Egg</label>
+                <input type="number" id="item4" name="item4" min="0" placeholder="Qty">
+            </div>
+            <div class="menu-item">
+                <label for="item5">Chicken Catlate</label>
+                <input type="number" id="item5" name="item5" min="0" placeholder="Qty">
+            </div> <div class="menu-item">
+                <label for="item6">Chicken Betas</label>
+                <input type="number" id="item6" name="item6" min="0" placeholder="Qty">
+            </div> <div class="menu-item">
+                <label for="item7">Deep Chicken</label>
+                <input type="number" id="item7" name="item7" min="0" placeholder="Qty">
+            </div> <div class="menu-item">
+                <label for="item8">Roll Chicken</label>
+                <input type="number" id="item4" name="item8" min="0" placeholder="Qty">
+            </div>            <
+           
+            
+            <div class="payment-methods">
+                <label>Payment Method:</label>
+                <div>
+                    <input type="radio" id="card" name="payment" value="card">
+                    <label for="card">Credit/Debit Card</label>
+                </div>
+                <div>
+                    <input type="radio" id="cash" name="payment" value="cash">
+                    <label for="cash">Cash on Delivery</label>
+                </div>
+            </div>
+            <button type="submit" class="order-button">Place Order</button>
+        </form>
+    </div>
+</body>
+</html>
